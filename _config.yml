@@ -22,13 +22,13 @@ title: Tessera
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Tessera example webpage
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://itszariep.github.io"
+baseurl: "/Tessera"
 github_username:  itszariep
 
 # Build settings
 remote_theme: itszariep/tessera
-theme: tessera-jekyll-theme
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
