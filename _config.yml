@@ -23,10 +23,20 @@ email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Tessera example webpage
 baseurl: "/Tessera"
-github_username:  itszariep
+url: "https://itszariep.github.io"
+github_username: itszariep
 
 # Build settings
 remote_theme: itszariep/tessera
+paginate: 9
+paginate_path: "/page:num/"
+
+
+social_links:
+  - name: GitHub
+    url: https://github.com/itszariep
+    icon: github
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
