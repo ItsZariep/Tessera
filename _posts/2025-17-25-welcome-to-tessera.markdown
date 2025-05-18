@@ -1,7 +1,9 @@
 ---
-layout: page
-title: About
-permalink: /about/
+layout: post
+title: "Welcome to Tessera"
+date: 2025-05-17
+categories: blog
+image: /assets/img/tessera.webp
 ---
 
 Tessera is a Jekyll theme designed with content creators in mind, but like any other Jekyll theme, it can be used by anyone.
