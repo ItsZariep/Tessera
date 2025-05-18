@@ -29,7 +29,7 @@ github_username: itszariep
 # Build settings
 remote_theme: itszariep/tessera
 paginate: 9
-paginate_path: "/page:num/"
+paginate_path: "/Tessera/page:num/"
 
 
 social_links:
