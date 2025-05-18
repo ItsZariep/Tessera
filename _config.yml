@@ -22,7 +22,6 @@ title: Tessera
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Tessera example webpage
-url: "https://itszariep.github.io"
 baseurl: "/Tessera"
 github_username:  itszariep
 
