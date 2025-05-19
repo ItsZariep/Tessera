@@ -19,3 +19,13 @@ plugins:
 
 paginate: 9
 paginate_path: "/page:num/"
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      image: /preview.jpg
+
+date_format: "%d/%m/%Y"
