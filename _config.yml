@@ -17,15 +17,22 @@ social_links:
 plugins:
   - jekyll-paginate
 
-paginate: 9
+paginate: 12
 paginate_path: "/page:num/"
 
 defaults:
-  -
+  - 
     scope:
       path: ""
       type: "pages"
     values:
+      image: /preview.jpg
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      author: "ItsZariep"
       image: /preview.jpg
 
 date_format: "%d/%m/%Y"
