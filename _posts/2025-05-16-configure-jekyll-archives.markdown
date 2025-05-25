@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Configure-jekyll-archives"
+title: "Configure jekyll-archives"
 date: 2025-05-16
 categories: Tutorial
 image: /assets/img/thumb/configure-jekyll-archives.jpg

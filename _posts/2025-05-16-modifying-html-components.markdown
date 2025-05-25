@@ -23,6 +23,29 @@ To customize a component, simply create a modified copy of it in your Jekyll sit
 
 ---
 
+## Available components:
+
+| File Name             | Description           |
+|-----------------------|-----------------------|
+| authors.html          | Authors description   |
+| bottompane.html       | Page bottom footer    |
+| comments.html         | Comments section      |
+| customheaders.html    | Custom HTML headers   |
+| head.html             | Common HTML headers   |
+| leftpane.html         | Left Side section     |
+| pagination-controls.html | Pagination controls|
+| postcontent.html      | Post content          |
+| postgrid.html         | Post grid on Index page|
+| rightpane.html        | Right side section    |
+| searchbar.html        | Search bar            |
+| sharebtn.html         | Share button on posts |
+| toppane.html          | Page top header       |
+| userbox.html          | Author box on posts   |
+
+> `customheaders.html` is useful if you don't want/need to edit all head.html, for example when you only add Google Search console verification header
+
+---
+
 ## Example: Modifying `rightpane.html`
 
 Let’s say you want to customize the `rightpane.html` component. Here’s what you need to do:
