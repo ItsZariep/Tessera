@@ -15,7 +15,9 @@
 	<meta name="twitter:title" content="{{ page.title }}" />
 	<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% elsif page.content and page.content != '' %}{{ page.content | strip_html | truncate: 150 }}{% else %}{{ site.description }}{% endif %}" />
 	<meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}{{ page.image }}" />
-
+	
+	<meta name="jk:jekylltheme" content="ItsZariep/Tessera" />
+	
 	<title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
 	<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 	<link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
