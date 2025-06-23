@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Sitemap supporton your site"
+title: "Sitemap support on your site"
 date: 2025-05-16
 categories: Tutorial
 image: /assets/img/thumb/sitemap-support.jpg
