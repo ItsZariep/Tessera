@@ -10,6 +10,11 @@ See [Tessera example page](https://itszariep.github.io/Tessera) for a vanilla ex
 
 ## Installation
 
+> [!WARNING]
+> If you want to fork, do not clone this branch (because is not suitable for use), fork [gh-pages](https://github.com/ItsZariep/Tessera/tree/gh-pages) branch instead
+
+---
+
 Add this line to your Jekyll site's `Gemfile`:
 
 ```ruby
