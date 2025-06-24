@@ -802,6 +802,11 @@ button {
 		align-items: center;
 	}
 
+	.post-posttitle {
+		max-width: 95%;
+		text-align: centerline;
+	}
+
 	.post {
 		margin: 0 auto;
 		text-align: justify;
@@ -829,6 +834,16 @@ button {
 		object-fit: contain;
 		width: 100%;
 	}
+
+	.post-postcontent h2 strong {
+		display: block;
+		text-align: center;
+	}
+	.post-postcontent h3 strong {
+		display: block;
+		text-align: left;
+	}
+
 
 	#left-container {
 		width: 90%;
