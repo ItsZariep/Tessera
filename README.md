@@ -11,7 +11,11 @@ See [Tessera example page](https://itszariep.github.io/Tessera) for a vanilla ex
 ## Installation
 
 > [!WARNING]
-> If you want to fork, do not clone this branch (because is not suitable for use), fork [gh-pages](https://github.com/ItsZariep/Tessera/tree/gh-pages) branch instead
+> Do not fork or clone this branch! It is not intended for use. Please fork [gh-pages](https://github.com/ItsZariep/Tessera/tree/gh-pages) branch instead:
+> 1. **Uncheck** the “Copy the `main` branch only” option during the fork process.
+> 2. In your forked repository:
+>    - Delete the `main` branch.
+>    - Rename the `gh-pages` branch to `main`.
 
 ---
 

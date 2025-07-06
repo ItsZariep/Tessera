@@ -804,7 +804,7 @@ button {
 
 	.post-posttitle {
 		max-width: 95%;
-		text-align: centerline;
+		text-align: left;
 	}
 
 	.post {
@@ -830,18 +830,21 @@ button {
 	}
 
 	.post-postcontent img {
-		color: red;
 		object-fit: contain;
 		width: 100%;
 	}
 
-	.post-postcontent h2 strong {
+	.post-postcontent h2 {
 		display: block;
 		text-align: center;
 	}
-	.post-postcontent h3 strong {
+	.post-postcontent h3 {
 		display: block;
 		text-align: left;
+	}
+	.post-postcontent strong {
+		text-align: left;
+		display: inline-block;
 	}
 
 
