@@ -366,6 +366,13 @@ label[for="toggleshare"] {
 	width: 100%;
 }
 
+.post-navigation {
+	display: flex;
+	flex-direction: row;
+	width: 95%;
+	justify-content: space-between;
+}
+
 .userbox {
 	display: flex;
 	align-items: flex-start;
