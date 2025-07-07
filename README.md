@@ -6,7 +6,9 @@ Tessera features three main components: two side panels and a central content ar
 
 ## Example:
 
-See [Tessera example page](https://itszariep.github.io/Tessera) for a vanilla example, or [My blog](https://itszariep.github.io/) (in Spanish) for a version with modifications and a real use case
+See [Tessera example page](https://itszariep.github.io/Tessera) for a vanilla example, or [My blog](https://itszariep.github.io/) (in Spanish) for a version with modifications and a real use case.
+
+You can also look at [Webpages created with Tessera](https://github.com/ItsZariep/Tessera/wiki/Webpages-created-with-Tessera) to see more functional websites
 
 ## Installation
 
