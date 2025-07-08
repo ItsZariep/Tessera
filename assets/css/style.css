@@ -371,6 +371,7 @@ label[for="toggleshare"] {
 	flex-direction: row;
 	width: 95%;
 	justify-content: space-between;
+	gap: 10vw;
 }
 
 .userbox {
