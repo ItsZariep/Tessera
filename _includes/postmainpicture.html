@@ -1,0 +1,10 @@
+<!--
+This component is intended for users who need to use a custom image
+without having to alter the entire postcontent.html
+-->
+
+	<div class="post-img">
+		{% if page.image %}
+			<img src="{{ page.image | relative_url }}" alt="{{ page.title }}" />
+		{% endif %}
+	</div>

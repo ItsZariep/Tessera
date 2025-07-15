@@ -17,11 +17,7 @@
 	</div>
 
 	<div class="post-postcontent">
-	<div class="post-img">
-		{% if page.image %}
-			<img src="{{ page.image | relative_url }}" alt="{{ page.title }}" />
-		{% endif %}
-	</div>
+	{% include postmainpicture.html %}
 
 	{{ content }}
 	</div>
