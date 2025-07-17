@@ -1,14 +1,19 @@
-<!-- Post grid, it includes the logic of displaying post on main.
+<!-- Post grid, it includes the logic of displaying post on main. -->
+
+
+{% if page.indextype == "posts" %}
+	<!-- Posts section -->
+
+	<!--
 	Edit your _config.yml to configure entries per page, example:
 		paginate: 9
 		paginate_path: "/page:num/"
- -->
 
-	<div id="posts-container">
-		<!-- If you don't want to use pagination
-			replace paginator.posts with site.posts
-		-->
-		{% for post in paginator.posts %}
+	If you don't want to use pagination
+		replace paginator.posts with site.posts
+	-->
+	<div class="posts-container">
+	{% for post in paginator.posts %}
 		<a href="{{ post.url | relative_url }}" class="post-link">
 			<article class="post-card">
 				<div class="post-image-wrapper">
@@ -23,8 +28,57 @@
 				</div>
 			</article>
 		</a>
-		{% endfor %}
-
-		<!-- pagination controls, see-->
-		{% include pagination-controls.html %}
+	{% endfor %}
+	{% include pagination-controls.html %}
 	</div>
+
+
+{% elsif page.indextype == "chapters" %}
+	<!-- Chapters section -->
+
+	<!--
+	Edit your _config.yml to configure chapters:
+		collections:
+			chapters:
+				output: true
+				permalink: /:name/
+
+	After that, define "section" and "order" on your chapters, example:
+		section: Web
+		order: 1
+	-->
+
+	{% assign sorted = site.chapters | sort: "order" %}
+	{% assign grouped = sorted | group_by: "section" %}
+
+	<div class="chapters-container">
+	{% for section in grouped %}
+		<h1>{{ section.name }}</h1>
+		<div class="posts-container">
+		{% for chapter in section.items %}
+			<a href="{{ chapter.url | relative_url }}" class="post-link">
+				<article class="post-card">
+					<div class="post-image-wrapper">
+						{% if chapter.image %}
+						<img src="{{ chapter.image | relative_url }}" alt="{{ chapter.title }}" class="post-image" />
+						{% endif %}
+					</div>
+					<div class="post-info">
+						<h3 class="post-labels">{{ chapter.categories | join: ' | ' }}</h3>
+						<h2 class="post-title">{{ chapter.title }}</h2>
+					</div>
+				</article>
+			</a>
+		{% endfor %}
+		</div>
+	{% endfor %}
+	</div>
+
+{% else %}
+	<!-- Fallback content -->
+	<div style="grid-column: 1 / -1;">
+	<p>No content found for this page type. Please make sure you defined <code class="language-plaintext highlighter-rouge">indextype: posts</code>
+		or <code class="language-plaintext highlighter-rouge">indextype: chapters</code></p>
+	</div>
+
+{% endif %}

@@ -429,13 +429,22 @@ label[for="toggleshare"] {
 
 /* CENTER SIDE (POST LIST) */
 
-#posts-container {
+.posts-container {
 	width: 100%;
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
 	gap: 2vw;
 	padding: 0 1vw 0 1vw;
 }
+.chapters-container {
+	width: 90%;
+	display: grid;
+	gap: 1rem;
+	padding: 2vh 2vw 2vh 0vw;
+	align-content: start;
+	justify-items: center;
+}
+
 
 .post-card {
 	height: 100%;
@@ -876,7 +885,7 @@ button {
 		display: block;
 	}
 
-	#posts-container {
+	.posts-container {
 		width: 90%;
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(60%, 1fr));

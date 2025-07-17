@@ -63,6 +63,43 @@ Tessera needs the following Jekyll plugins to function properly:
   
 ## Post-install setup
 
+### Choosing Posts or Chapters
+
+Post are useful for blogs or content where date is important, Chapters is useful for books/folders where date is not important and sections are necessary.
+
+In your index page define `indextype: chapters` or `indextype: posts`:
+
+```
+---
+layout: home
+title: Home
+paginate: 9
+indextype: posts
+---
+
+> [!NOTE]
+> You can have both indexes as long both pages have `home` layout and a proper indextype
+
+```
+
+#### Chapters
+
+to enable Chapters, you need to set:
+
+```
+collections:
+  chapters:
+    output: true
+    permalink: /:name/
+```
+
+After that, on your chapters sites you need to set `section` and `order`:
+
+```
+section: Web
+order: 1
+```
+
 ### Search
 Search needs /`search.json`:
 
