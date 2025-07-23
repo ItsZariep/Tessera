@@ -1,0 +1,52 @@
+<div class="toc">
+{% capture content_html %}
+	{{ page.content | markdownify }}
+{% endcapture %}
+
+{% assign toc_items = content_html | split: '<h' %}
+
+<ul class="toc">
+	{% assign current_h1 = false %}
+	{% assign current_h2 = false %}
+	
+	{% for item in toc_items %}
+		{% assign level = item | slice: 0, 1 %}
+		{% if level == "1" or level == "2" or level == "3" %}
+			{% assign closing_tag = '</h' | append: level | append: '>' %}
+			{% assign heading_text = item | split: closing_tag | first | split: '>' | last | strip %}
+			{% assign heading_id = heading_text | downcase | replace: ' ', '-' | replace: '.', '' %}
+			
+			{% if level == "1" %}
+				{% if current_h2 %}
+					</ul>
+					{% assign current_h2 = false %}
+				{% endif %}
+				{% if current_h1 %}
+					</ul>
+				{% endif %}
+				<li class="toc-level-1"><a href="#{{ heading_id }}">{{ heading_text }}</a>
+				<ul>
+				{% assign current_h1 = true %}
+			
+			{% elsif level == "2" %}
+				{% if current_h2 %}
+					</ul>
+				{% endif %}
+				<li class="toc-level-2"><a href="#{{ heading_id }}">{{ heading_text }}</a>
+				<ul>
+				{% assign current_h2 = true %}
+			
+			{% elsif level == "3" %}
+				<li class="toc-level-3"><a href="#{{ heading_id }}">{{ heading_text }}</a></li>
+			{% endif %}
+		{% endif %}
+	{% endfor %}
+	
+	{% if current_h2 %}
+		</ul>
+	{% endif %}
+	{% if current_h1 %}
+		</ul>
+	{% endif %}
+</ul>
+</div>
