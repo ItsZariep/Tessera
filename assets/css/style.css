@@ -716,9 +716,12 @@ button {
 	transform: scale(0.98);
 }
 
+.hidden {
+	display: none;
+}
 
 /* PORTRAIT SCREEN CHANGES*/
-@media only screen and (max-aspect-ratio: 1/1) {
+@media only screen and (max-width: 768px) and (max-aspect-ratio: 1/1) {
 	body {
 		background-color: var(--bg);
 		color: var(--fg);
