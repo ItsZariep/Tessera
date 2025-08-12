@@ -2,6 +2,8 @@
 
 Tessera is a Jekyll theme designed with content creators in mind, but like any other Jekyll theme, it can be used by anyone.
 
+[Hugo variant](https://codeberg.org/ItsZariep/Tessera)
+
 Tessera features three main components: two side panels and a central content area. The theme is highly modular, allowing you to easily customize any component by overriding the `_includes`.
 
 ## Example:
