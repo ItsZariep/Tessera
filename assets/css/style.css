@@ -770,6 +770,10 @@ ul li ul li {
 	color: var(--accent);
 }
 
+.toc ul ul {
+	padding-inline-start: 15px;
+}
+
 /* PORTRAIT SCREEN CHANGES*/
 @media only screen and (max-width: 768px) and (max-aspect-ratio: 1/1) {
 	body {
